@@ -1,7 +1,12 @@
 # TO-DO
-1. Excel/CSV
-2. Airflow or Cron Scheduler
-3. Email Notifications
+| Status  | Task                      | Notes                                           |
+|---------|---------------------------|-------------------------------------------------|
+|   [x]   | 1. Scrape Website         | Scrape PrixWorkshop for now                     |
+|   [x]   | 2. Write Excel/CSV        |                                                 |
+|   [x]   | 3. Python VENV            |                                                 |
+|   [x]   | 4. Airflow Scheduler      |                                                 |
+|   [x]   | 5. Update Date/Time       |                                                 |
+|   [ ]   | 6. Email Notifications    |                                                 |
 
 # STUDY NOTES
 ## Web Scraping
@@ -24,6 +29,7 @@
     - deactivate
 - To see version of python package
     - pip show <package name>
+    - pip list
 
 ## WebDriver
 - Automates web browsing to simulate user actions (ex. clicking buttons, scrolling, web scraping)
