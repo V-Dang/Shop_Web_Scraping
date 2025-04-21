@@ -8,8 +8,6 @@
 | - [X]  | 5. Update Date/Time       | Added updated_time col in excel to track.       |
 | - [ ]  | 6. Email Notifications    |                                                 |
 
-- [X]
-
 # STUDY NOTES
 ## Web Scraping
 -  2 Types of Websites:
