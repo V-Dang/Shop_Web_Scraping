@@ -1,12 +1,12 @@
 # TO-DO
-| Status  | Task                      | Notes                                           |
-|---------|---------------------------|-------------------------------------------------|
-|   [x]   | 1. Scrape Website         | Scrape PrixWorkshop for now                     |
-|   [x]   | 2. Write Excel/CSV        |                                                 |
-|   [x]   | 3. Python VENV            |                                                 |
-|   [x]   | 4. Airflow Scheduler      |                                                 |
-|   [x]   | 5. Update Date/Time       |                                                 |
-|   [ ]   | 6. Email Notifications    |                                                 |
+| Status | Task                      | Notes                                           |
+|--------|---------------------------|-------------------------------------------------|
+| - [x]  | 1. Scrape Website         | Scrape PrixWorkshop for now                     |
+| - [x]  | 2. Write Excel/CSV        |                                                 |
+| - [x]  | 3. Python VENV            |                                                 |
+| - [x]  | 4. Airflow Scheduler      |                                                 |
+| - [x]  | 5. Update Date/Time       |                                                 |
+| - [ ]  | 6. Email Notifications    |                                                 |
 
 # STUDY NOTES
 ## Web Scraping
