@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+from datetime import datetime
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -7,6 +8,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
 
 def get_price(url_link):
+
+    updated_time = datetime.now()              # Set the updated timestamp
+
     chrome_options = Options()                 # Set Selenium Chrome options
     chrome_options.add_argument("--headless")  # Run in headless mode (without opening the browser)
     chrome_options.add_argument("--disable-blink-features=AutomationControlled")  # Reduce bot detection
@@ -36,7 +40,7 @@ def get_price(url_link):
     # item_price_sale = x.find("div", attrs={"class":"price__sale"}).text.strip()
 
     # print(x)
-    return url_link, item_name, item_price_regular, # item_price_sale
+    return url_link, item_name, item_price_regular, updated_time # item_price_sale
 
 def update_excel():
     df = pd.read_excel("clothing_links.xlsx")
@@ -46,8 +50,9 @@ def update_excel():
         item = get_price(row["link"])
         row_list.append(item)
         print(f"Updating {item[1]} price.")
+        print(row_list[index])
 
-    df1 = pd.DataFrame(row_list, columns=["url_link", "item_name", "item_price_regular"])           # Convert list to df
+    df1 = pd.DataFrame(row_list, columns=["url_link", "item_name", "item_price_regular", "updated_time"])           # Convert list to df
 
     with pd.ExcelWriter('clothing_links.xlsx') as writer: 
         df.to_excel(writer, sheet_name="prixworkshop")                               # Write to excel

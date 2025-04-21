@@ -1,1 +1,5 @@
-/price_scraping/
+**/airflow.cfg
+**/airflow.db
+**/logs/
+**/__pycache__/
+/venv/
